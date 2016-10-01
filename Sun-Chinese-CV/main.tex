@@ -1,0 +1,166 @@
+%% start of file `template-zh.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv 主题
+\moderncvstyle{classic}                        % 选项参数是 ‘casual’, ‘classic’, ‘oldstyle’ 和 ’banking’
+\moderncvcolor{blue}                          % 选项参数是 ‘blue’ (默认)、‘orange’、‘green’、‘red’、‘purple’ 和 ‘grey’
+%\nopagenumbers{}                             % 消除注释以取消自动页码生成功能
+
+% 字符编码
+\usepackage[utf8]{inputenc}                   % 替换你正在使用的编码
+\usepackage{CJKutf8}
+
+% 调整页面粗细
+%\usepackage[scale=0.85]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}  
+\usepackage{geometry}
+\geometry{left=2.0cm,right=2.0cm,top=1.3cm,bottom=1.3cm}
+% 如果你希望改变日期栏的宽度
+
+% 个人信息
+\name{\hspace{1cm}孙}{威}
+\title{ }                     % 可选项、如不需要可删除本行
+%\address{街道及门牌号}{邮编及城市}            % 可选项、如不需要可删除本行
+\phone[mobile]{+86 186-8230-2496}              % 可选项、如不需要可删除本行
+%\phone[fixed]{+2~(345)~678~901}               % 可选项、如不需要可删除本行
+%\phone[fax]{+3~(456)~789~012}                 % 可选项、如不需要可删除本行
+\email{sunwayliving@gmail.com}                    % 可选项、如不需要可删除本行
+\social[github]{https://github.com/sunwaylive}
+\social[linkedin]{http://www.linkedin.com/pub/sun-wei/87/626/128}
+%\homepage{github.com/sunwaylive}                  % 可选项、如不需要可删除本行
+%\extrainfo{附加信息 (可选项)}                 % 可选项、如不需要可删除本行
+\photo[64pt][0.4pt]{sunwei3}                  % ‘64pt’是图片必须压缩至的高度、‘0.4pt‘是图片边框的宽度 (如不需要可调节至0pt)、’picture‘ 是图片文件的名字;可选项、如不需要可删除本行
+%\quote{引言(可选项)}                          % 可选项、如不需要可删除本行
+
+% 显示索引号;仅用于在简历中使用了引言
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabtitlefontel{\arabic{enumiv}}}
+%\makeatother
+
+% 分类索引
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            内容
+%----------------------------------------------------------------------------------
+\begin{document}
+	\begin{CJK}{UTF8}{gbsn}                       % 详情参阅CJK文件包
+		\maketitle
+		
+		\section{教育背景}
+		\cventry{2012 -- 2015}{硕士 计算机科学}{\hfill \textcolor{color4}{中国科学院深圳先进技术研究院}}{}{}{-- 主修: 计算机图形学和可视化}  % 第3到第6编码可留白
+		\cventry{2008 -- 2012}{本科 软件工程}{\hfill \textcolor{color4}{四川大学}}{}{}{-- GPA: 3.57/4 (Top 2\%), 英语四级: 612, 六级: 513}
+		
+		%\section{毕业论文}
+		%\cvitem{题目}{\emph{题目}}
+		%\cvitem{导师}{导师}
+		%\cvitem{说明}{\small 论文简介}
+		
+		\section{项目经历}
+		%\rightline{hello world}\newline
+		\cventry{2015 -- 至今}{火影忍者手游}{}{} {\hfill 腾讯互动娱乐} {-- 
+		在腾讯互娱担任游戏移动客户端/服务器端研发工程师,基于Unity3D 开发手游 火影忍者, 负责游戏特效shader，系统等逻辑的编写; 并且为项目接入NVIDIA的 Physx物理引擎, 使得服务器具备了计算物理的能力。}
+		\cventry{2015 -- 2015}{加勒比海斗手游}{}{} {\hfill 腾讯互动娱乐MiniGame} {-- 
+		作为刚入职为期一个月的minigame项目的技术带头人, 基于Cocos2d 游戏引擎,开发类似DOTA中勾肥大战的IOS端游戏, 客户端用Lua写成,服务器基于C++开发放在阿里云上.负责整个项目的结构和客户端的编写,协调等工作.}
+		\cventry{2014 -- 2015}{Autoscanning for Coupled Scene Reconstruction and Proactive Object Analysis}{}{} {\hfill} {-- 
+		此算法在机器人扫描整个室内场景后, 自动对场景进行识别, 划分区域, 再对每一个兴趣区域进行物体识别, 找到扫描不够精确的部分, 指导机器人进行更加细节的扫描, 负责3D区域的建模与分析, 基于D3D开发。}
+		\cventry{2013 -- 2014}{Quality Driven Poisson Guided Autoscanning }{}{}{\hfill中科院深圳先进院}{-- 此算法指导机器人自动选取最佳扫描点全自动扫描物体。编写了绝大部分本算法的核心代码, 同时实现了另外2个最前沿扫描沿算法作为比较，项目论文以共同一作的身份发表在了图形学领域国际顶级会议Siggraph Asia 2014。\href{http://v.youku.com/v_show/id_XNzQ0NTY0Mzk2.html}{\underline{观看项目视频请点击此}}。}
+		
+		\cventry{2013 -- 2013}{CGAL Google编程之夏2013 }{}{}{\hfill Google}{-- CGAL(Computer Geometry Algorithm Library)是开源的计算几何算法库，里面实现了很多图形学领域常用算法。使用Intel的并行库(Thread Building Block)并行加速了CGAL中的三个算法, 在4核环境下提升运行速度2至6倍, 已在CGAL4.4版本中发布。}
+		\cventry{2009 --vikky 2010}{Skios输入法}{}{}{\hfill微软创新杯2010}{-- 运行在WP移动端的连触式输入法，利用表驱动模式设计并实现了词库的存储和查找。}
+		\cventry{2009 -- 2010}{基于Zigbee的智慧校园系统 }{}{}{\hfill全国大学生软件创新大赛}{-- 项目是基于Zigbee传感网络的Web应用，包括硬件层(Zigbee网络，压力温度等传感器)，数据层(Mysql)和应用层(JSP)。系统提供如下功能包括实时监控物品的安全，教室资源的占用情况等等。编写了半数的功能代码(物品安全，防火报警等等)，以及部分前端展示的代码。}
+		
+		
+		%\subsection{专业}
+		%\cventry{年 -- 年}{职位}{公司}{城市}{}{不超过1--2行的概况说明\newline{}%
+		%工作内容:%
+		%\begin{itemize}%
+		%\item 工作内容 1;
+		%\item 工作内容 2、 含二级内容:
+		%  \begin{itemize}%
+		%  \item 二级内容 (a);
+		%  \item 二级内容 (b)、含三级内容 (不建议使用);
+		%    \begin{itemize}
+		%    \item 三级内容 i;
+		%    \item 三级内容 ii;
+		%    \item 三级内容 iii;
+		%    \end{itemize}
+		%  \item 二级内容 (c);
+		%  \end{itemize}
+		%\item 工作内容 3。
+		%\end{itemize}}
+		
+		%\section{编程技能}
+		%\cvitemwithcomment{语言 1}{水平}{评价}
+		%\cvitemwithcomment{语言 2}{水平}{评价}
+		%\cvitemwithcomment{语言 3}{水平}{评价}
+		
+	%	\section{编程技能}
+	%	\cvitem{}{C/C++ (熟练), Objective-c, Java, Mysql, HTML, PHP (写过网站), eLisp (Emacs)}{}{}
+		
+		%\cvitemwithcomment{语言 1}{水平}{评价}
+		\section{获奖情况}
+		\cvitemwithcomment{2015 -- 2015}{\textbf{中国科学院优秀毕业生}} {国家教育部}
+		\cvitemwithcomment{2014 -- 2015}{\textbf{研究生国家奖学金 (Top 1\%)}} {国家教育部}
+		\cvitemwithcomment{2011 -- 2012}{\textbf{国家励志奖学金}} {国家教育部}
+		
+		\cvitemwithcomment{2010 -- 2011}{\textbf{国家奖学金 (Top 1\%)}}   {国家教育部}
+		\cvitemwithcomment{2010 -- 2011}{\textbf{双十佳优秀学生 (200/60000)}} {四川大学}
+		\cvitemwithcomment{2010 -- 2011}{\textbf{大学生软件创新大赛全国二等奖}} {教育部与英特尔}
+		\cvitemwithcomment{2009 -- 2010}{\textbf{国家奖学金 (Top 1\%)}}   {国家教育部}
+		\cvitemwithcomment{2009 -- 2010}{\textbf{微软创新杯全国三等奖}}    {微软}
+		
+		\section{发表论文}
+		\cventry{}{[1] Wu Shihao, Sun Wei, Long Pinxin, Huang Hui, Cohen-Or Daniel, Gong Minglun, Deussen Oliver, Chen Baoquan, Quality-driven Poisson-guided Autoscanning, (SIGGRAPH ASIA 2014).}{}{}{\hfill}
+		{}
+		\cventry{}{[2] Kai Xu, Hui Huang, Yifei Shi, Hao Li, Pinxin Long, Jianong Caichen, Wei Sun, Baoquan Chen , Autoscanning for Coupled Scene Reconstruction and Proactive Object Analysis, (SIGGRAPH ASIA 2015).}{}{}{\hfill}
+		{}
+		
+		\section{学生工作}
+		\cvitemwithcomment{2013 -- 2014}{\textbf{研究生学生会主席}} {中国科学院深圳先进院}
+		%\cvitem{2008}{\textbf{Third-Award for Mathematical Modeling and ACM Competition}, SCNU}
+		
+		%\section{个人兴趣}
+		%\cvitem{爱好 1}{\small 说明}
+		%\cvitem{爱好 2}{\small 说明}
+		%\cvitem{爱好 3}{\small 说明}
+		
+		%\section{其他 1}
+		%\cvlistitem{项目 1}
+		%\cvlistitem{项目 2}
+		%\cvlistitem{项目 3}
+		
+		%\renewcommand{\listitemsymbol}{-}             % 改变列表符号
+		
+		%\section{其他 2}
+		%\cvlistdoubleitem{项目 1}{项目 4}
+		%\cvlistdoubleitem{项目 2}{项目 5\cite{book1}}
+		%\cvlistdoubleitem{项目 3}{}
+		
+		% 来自BibTeX文件但不使用multibib包的出版物
+		%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% BibTeX的数字标签
+		%\nocite{*}
+		%\bibliographystyle{plain}
+		%\bibliography{publications}                    % 'publications' 是BibTeX文件的文件名
+		
+		% 来自BibTeX文件并使用multibib包的出版物
+		%\section{出版物}	
+		%\nocitebook{book1,book2}
+		%\bibliographystylebook{plain}
+		%\bibliographybook{publications}               % 'publications' 是BibTeX文件的文件名
+		%\nocitemisc{misc1,misc2,misc3}
+		%\bibliographystylemisc{plain}
+		%\bibliographymisc{publications}               % 'publications' 是BibTeX文件的文件名
+		
+		\clearpage\end{CJK}
+\end{document}
+
+
+%% 文件结尾 `template-zh.tex'.
